@@ -1,6 +1,6 @@
 package ldapserver
 
-import ldap "github.com/vjeantet/goldap/message"
+import ldap "github.com/dapaxx/goldap/message"
 
 // LDAP Application Codes
 const (
@@ -81,8 +81,13 @@ const (
 	ModifyRequestChangeOperationReplace = 2
 )
 
+// SearchRequestScopeBaseObject exports 0
 const SearchRequestScopeBaseObject = 0
+
+// SearchRequestSingleLevel exports 1
 const SearchRequestSingleLevel = 1
+
+// SearchRequestHomeSubtree exports 2
 const SearchRequestHomeSubtree = 2
 
 // Extended operation responseName and requestName
